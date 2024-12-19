@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Верстка сайта на Bootstrap 4</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="img/logo.png" alt="Логотип" width="150">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">О компании</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contacts" class="nav-link">Контакты</a>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+    </nav>
+
+    <div id="slides" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">   
+                <img src="img/small-screw-pincers-professional-hand-repairing-fixing-broken-electronics-device-lab-concept.jpg" class="d-block w-100" alt="Слайд 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 class="display-2">Ремонт и обслуживание компьютерной техники</h3>
+                    <a href="#contactForm" class="btn btn-outline-light btn-lg">Заказать</a>
+                </div>
+            </div>
+            <div class="carousel-item">   
+                <img src="img/close-focus-angled-esd-tweezers-with-long-hair-removed-from-broken-cooler-electronic-device-service-center.jpg" class="d-block w-100" alt="Слайд 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 class="display-2">Ремонт и обслуживание компьютерной техники</h3>
+                    <a href="#contacts" class="btn btn-outline-light btn-lg">Заказать</a>
+                </div>
+            </div>
+        </div> <!-- Закрывающий тег для carousel-inner -->
+    </div> <!-- Закрывающий тег для carousel -->
+
+    <div class="container-fluid" id="about">
+        <div class="row jumbotron">
+            <div class="col-12">
+                <h1 class="display-4 mt-3 pl-4">О компании</h1>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10 pl-4 mx-auto">
+                <p class="lead">Обслуживание компьютерной техники – комплексная задача, которую следует производить на протяжении длительного времени. 
+                    «Инфотехсервис» осуществляет деятельность по техническому обслуживанию и ремонту вычислительной техники с 1991 года. 
+                    Именно постоянное сотрудничество с компаниями позволяет нам поддерживать самое высокое качество услуг. 
+                    Мы являемся официальным партнером и дилером ООО «Аксофт Интернейшнл» на территории Гродненской области по реализации программных средств, 
+                    в том числе антивирусного лицензионного программного обеспечения. Сотрудничаем с ОДО «ВирусБлокАда» – единственный разработчик антивирусного 
+                    лицензионного программного обеспечения в Республике Беларусь.
+                </p>
+            </div>
+        </div>
+    </div>     
+
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="col-12">
+                <h1 class="display-4 mt-3">Преимущества</h1>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="d-flex align-items-center mb-4"> 
+                        <i class="fas fa-code fa-2x mr-3"></i> 
+                        <h4 class="mb-0">Оперативная и квалифицированная работа</h4>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="fas fa-check-circle fa-2x mr-3"></i>
+                        <h4 class="mb-0">Предоставление гарантии на оказанные услуги</h4>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="fas fa-clock fa-2x mr-3"></i>
+                        <h4 class="mb-0">Соблюдение сроков оказания услуг</h4>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="fas fa-tools fa-2x mr-3"></i>
+                        <h4 class="mb-0 mt-5">Постоянная и бесперебойная помощь специалистов</h4>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="fas fa-cogs fa-2x mr-3"></i> 
+                        <h4 class="mb-0">Работа только с качественными и надежными материалами и программами</h4>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="fas fa-dollar-sign fa-2x mr-3"></i>
+                        <h4 class="mb-0 mt- -1">Экономия денег на содержании штатной единицы системного администратора</h4>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+        </div>
+    </div>
+
+    <!-- Заголовок для карточек услуг -->
+    <div class="container text-center" id="services">
+        <h1 class="display-4 my-4">Услуги</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="img/repairing.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Антивирусная поддержка</h5>
+                        <p class="card-text">
+                            установка и настройка лицензионных антивирусных программ
+                            выявление и очистка системы от вирусов
+                            консультирование по вопросам защиты компьютера от вирусных атак
+                        </p>
+                        <a href="#contactForm" class="btn btn-primary">Заказать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="img/ustanovka-po.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Создание компьютерной инфраструктуры компании</h5>
+                        <p class="card-text">
+                            построение СПД, подключение компьютеров и оргтехники к СПД
+                            подключение и настройка сети Интернет
+                            установка и настройка периферийных устройств
+                            установка и настройка беспроводных Wifi сетей
+                            подбор и установка оборудования для СПД, подходящего в каждом конкретном случае
+                        </p>
+                        <a href="#contactForm" class="btn btn-primary">Заказать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="img/8a.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Поддержка и администрирование</h5>
+                        <p class="card-text">
+                            администрирование ПК и серверов (в том числе удалённое)
+                            обеспечение безопасности информации, хранящейся на компьютерах, подключенных к беспроводной сети
+                            настройка программ работы с почтой и других программ, необходимых для вашей работы
+                        </p>
+                        <a href="#contactForm" class="btn btn-primary">Заказать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="img/58.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Антивирусная поддержка</h5>
+                        <p class="card-text">
+                            установка и настройка лицензионных антивирусных программ
+                            выявление и очистка системы от вирусов
+                            консультирование по вопросам защиты компьютера от вирусных атак
+                        </p>
+                        <a href="#contactForm" class="btn btn-primary">Заказать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="img/infr.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Создание компьютерной инфраструктуры компании</h5>
+                        <p class="card-text">
+                            построение СПД, подключение компьютеров и оргтехники к СПД
+                            подключение и настройка сети Интернет
+                            установка и настройка периферийных устройств
+                            установка и настройка беспроводных Wifi сетей
+                            подбор и установка оборудования для СПД, подходящего в каждом конкретном случае
+                        </p>
+                        <a href="#contactForm" class="btn btn-primary">Заказать</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img class="card-img-top" src="img/4.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Другое</h5>
+                        <p class="card-text">
+                             работа с носителями информации (восстановление информации, резервное копирование и т.п.)
+                             заправка картриджей всех типов принтеров и печатного оборудования (от 7 рублей)
+                             выезд специалиста для диагностики и консультирования
+                             модернизация устаревшего оборудования
+                             акт о техническом состоянии компьютерного оборудования (7 рублей)
+                        </p>
+                        <a href="#contactForm" class="btn btn-primary">Заказать</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-4" id="contactForm">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <h2 class="text-center">Заказать</h2>
+                <form action="https://formspree.io/f/mwkzjzvd" method="POST">
+                    <div class="form-group">
+                        <label for="name">Имя</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>  
+
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="center">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2531.978689374342!2d23.835486615860426!3d53.90020387999497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e3f2b2f2f2f2f2%3A0x1234567890abcdef!2s230003%20г.%20Гродно%2C%20ул.%20Советская%2031-2!5e0!3m2!1sru!2sby!4v1635108170740!5m2!1sru!2sby" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <!-- Добавим отступ между картой и футером -->
+    <!-- Футер -->
+    <footer class="container-fluid bg-dark text-light" id="contacts"> <!-- футер (подвал) сайта -->
+        <div class="container">
+            <div class="row padding text-center">
+                <div class="col-6 text-left">
+                    <h2 class="text-primary">Контакты</h2>
+                    <div class="mt-2">
+                        <p class="mb-1">Телефоны:</p>
+                        <p class="mb-0">+375 (152) 31-24-00 - диспетчер (тел./факс)</p>
+                        <p class="mb-0">Тулай Светлана Петровна - директор</p>
+                        <p class="mb-0">+375 (152) 31-24-03,</p>
+                        <p class="mb-0">моб. +375 (29) 1345487</p>
+                        <p class="mb-0">Копысова Наталья Николаевна - главный бухгалтер</p>
+                        <p class="mb-0">+375 (152) 31-24-01</p>
+                        <p class="mb-0">Рогожкин Евгений Арсеньевич - ведущий экономист</p>
+                        <p class="mb-0">+375 (152) 31-24-04,</p>
+                        <p class="mb-0">моб. +375 (29) 8694404</p>
+                    </div>
+                </div>
+                <div class="col-6 text-right">
+                    <div class="mt-2">
+                        <p class="mb-1">Время работы:</p>
+                        <p class="mb-0">Пн-Чт: 8:15 - 17:00</p>
+                        <p class="mb-0">Пт: 8:15 - 15:45</p>
+                        <p class="mb-0">Обед: 12:30 - 13:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-3">
+                <div class="col-12 text-center">
+                    <a href="martacitok@gmail.com" class="text-primary email-icon">
+                        <i class="fas fa-envelope fa-3x"></i> <!-- Увеличенный значок email -->
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
